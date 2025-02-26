@@ -1,0 +1,32 @@
+[vite] connecting...
+DOMException {}
+
+Warning: validateDOMNesting(...): <a> cannot appear as a descendant of &lt;a&gt;.
+    at a
+    at a
+    at https://aa11a6e6-b1d0-47b3-9b19-bb20f9e04f50-00-2xujehhrz2mpk.kirk.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/wouter.js?v=b16cc32b:352:18
+    at li
+    at _c31 (https://aa11a6e6-b1d0-47b3-9b19-bb20f9e04f50-00-2xujehhrz2mpk.kirk.replit.dev/src/components/ui/sidebar.tsx:691:13)
+    at ul
+    at _c29 (https://aa11a6e6-b1d0-47b3-9b19-bb20f9e04f50-00-2xujehhrz2mpk.kirk.replit.dev/src/components/ui/sidebar.tsx:668:13)
+    at div
+    at _c19 (https://aa11a6e6-b1d0-47b3-9b19-bb20f9e04f50-00-2xujehhrz2mpk.kirk.replit.dev/src/components/ui/sidebar.tsx:537:51)
+    at div
+    at div
+    at div
+    at https://aa11a6e6-b1d0-47b3-9b19-bb20f9e04f50-00-2xujehhrz2mpk.kirk.replit.dev/src/components/ui/sidebar.tsx:155:7
+    at div
+    at Sidebar (https://aa11a6e6-b1d0-47b3-9b19-bb20f9e04f50-00-2xujehhrz2mpk.kirk.replit.dev/src/components/dashboard/Sidebar.tsx:41:22)
+    at div
+    at Dashboard (https://aa11a6e6-b1d0-47b3-9b19-bb20f9e04f50-00-2xujehhrz2mpk.kirk.replit.dev/src/pages/dashboard.tsx:29:20)
+    at Route (https://aa11a6e6-b1d0-47b3-9b19-bb20f9e04f50-00-2xujehhrz2mpk.kirk.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/wouter.js?v=b16cc32b:338:16)
+    at ProtectedRoute (https://aa11a6e6-b1d0-47b3-9b19-bb20f9e04f50-00-2xujehhrz2mpk.kirk.replit.dev/src/components/ProtectedRoute.tsx:21:34)
+    at Switch (https://aa11a6e6-b1d0-47b3-9b19-bb20f9e04f50-00-2xujehhrz2mpk.kirk.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/wouter.js?v=b16cc32b:394:17)
+    at Router
+    at div
+    at Provider (https://aa11a6e6-b1d0-47b3-9b19-bb20f9e04f50-00-2xujehhrz2mpk.kirk.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-2ZLTH5VR.js?v=b16cc32b:48:15)
+    at TooltipProvider (https://aa11a6e6-b1d0-47b3-9b19-bb20f9e04f50-00-2xujehhrz2mpk.kirk.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@radix-ui_react-tooltip.js?v=b16cc32b:59:5)
+    at https://aa11a6e6-b1d0-47b3-9b19-bb20f9e04f50-00-2xujehhrz2mpk.kirk.replit.dev/src/components/ui/sidebar.tsx:54:7
+    at AuthProvider (https://aa11a6e6-b1d0-47b3-9b19-bb20f9e04f50-00-2xujehhrz2mpk.kirk.replit.dev/src/context/AuthContext.tsx:32:32)
+    at QueryClientProvider (https://aa11a6e6-b1d0-47b3-9b19-bb20f9e04f50-00-2xujehhrz2mpk.kirk.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@tanstack_react-query.js?v=b16cc32b:2844:3)
+    at App

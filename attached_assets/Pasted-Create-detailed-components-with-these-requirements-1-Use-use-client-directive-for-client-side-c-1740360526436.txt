@@ -1,0 +1,143 @@
+Create detailed components with these requirements:
+1. Use 'use client' directive for client-side components
+2. Style with Tailwind CSS utility classes for responsive design
+3. Use Lucide React for icons (from lucide-react package). Do NOT use other UI libraries unless requested
+4. Use stock photos from picsum.photos where appropriate, only valid URLs you know exist
+5. Configure next.config.js image remotePatterns to enable stock photos from picsum.photos
+6. Create root layout.tsx page that wraps necessary navigation items to all pages
+7. MUST implement the navigation elements items in their rightful place i.e. Left sidebar, Top header
+8. Accurately implement necessary grid layouts
+9. Follow proper import practices:
+   - Use @/ path aliases
+   - Keep component imports organized
+   - Update current src/app/page.tsx with new comprehensive code
+   - Don't forget root route (page.tsx) handling
+   - You MUST complete the entire prompt before stopping
+
+AI Conversational Dashboard Analytics Interface
+</summary_title>
+
+<image_analysis>
+
+1. Navigation Elements:
+- Left sidebar with: Dashboard, Agents, Call History, Knowledge Base, Phone Numbers, Settings
+- Secondary navigation: Audio Tools, Notifications, Workspace selector
+- Top-right filters: All agents, Last month
+
+
+2. Layout Components:
+- Left sidebar: 250px width
+- Main content area: ~1000px flexible width
+- Top stats cards: 4 equal-width containers
+- Line graph: Full width container
+- Agent stats: 2-column grid layout
+
+
+3. Content Sections:
+- Header with active calls counter
+- Workspace title and greeting
+- Key metrics cards (4 stats)
+- Time-series graph (Jan 24 - Feb 23)
+- Most called agents section
+- Language distribution section
+
+
+4. Interactive Controls:
+- Collapsible sidebar sections
+- Dropdown filters
+- Interactive graph with hover states
+- "See all 7 agents" link button
+
+
+5. Colors:
+- Primary: #000000 (text)
+- Secondary: #666666 (subtext)
+- Accent: #4A90E2 (links/buttons)
+- Background: #FFFFFF
+- Border: #E5E5E5
+
+
+6. Grid/Layout Structure:
+- 12-column grid system
+- 24px outer margins
+- 16px component padding
+- Responsive breakpoints at 768px, 1024px, 1440px
+</image_analysis>
+
+<development_planning>
+
+1. Project Structure:
+```
+src/
+├── components/
+│   ├── layout/
+│   │   ├── Sidebar
+│   │   ├── Header
+│   │   └── MainContent
+│   ├── features/
+│   │   ├── Stats
+│   │   ├── TimeGraph
+│   │   └── AgentList
+│   └── shared/
+├── assets/
+├── styles/
+├── hooks/
+└── utils/
+```
+
+
+2. Key Features:
+- Real-time call tracking
+- Analytics dashboard
+- Agent performance metrics
+- Time-series visualization
+- Language distribution tracking
+
+
+3. State Management:
+```typescript
+interface AppState {
+├── calls: {
+│   ├── activeCount: number
+│   ├── historicalData: TimeSeriesData[]
+│   └── metrics: CallMetrics
+├── }
+├── agents: {
+│   ├── list: Agent[]
+│   ├── stats: AgentStats
+│   └── selectedAgent: string
+├── }
+}
+```
+
+
+4. Routes:
+```typescript
+const routes = [
+├── '/dashboard',
+├── '/agents/*',
+├── '/calls/*',
+├── '/knowledge-base/*',
+└── '/settings/*'
+]
+```
+
+
+5. Component Architecture:
+- DashboardLayout (parent)
+- StatisticsCards (reusable)
+- TimeSeriesGraph (reusable)
+- AgentStatsGrid (feature)
+- LanguageDistribution (feature)
+
+
+6. Responsive Breakpoints:
+```scss
+$breakpoints: (
+├── 'mobile': 320px,
+├── 'tablet': 768px,
+├── 'desktop': 1024px,
+└── 'wide': 1440px
+);
+```
+</development_planning>
