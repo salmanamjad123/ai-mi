@@ -8,7 +8,6 @@ import {
 } from "firebase/auth";
 import { auth } from "@/lib/firebase";
 import type { User } from "@shared/schema";
-
 interface AuthUser extends FirebaseUser {
   id: number;
 }
